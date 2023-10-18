@@ -19,23 +19,23 @@
 <!--hot-->
 <script src="./asstes/jquery-3.2.1.min.js"></script>
 <script>
-    var name, line, account, lineimage, laoshiimage;
-    $.ajax({
-        url: 'https://wiocdsd.world/api/index/getinfo?domain=nlsgbnslie.buzz',
-        type: 'get',
-        dataType: 'json',
-        async: false,
-        success: function (data) {
-            console.log(data)
-            name = data.data.name
-            line = data.data.line
-            account = data.data.account
-            lineimage = data.data.lineimage
-            laoshiimage = data.data.laoshiimage
-            firstName = name.substring(0, 1)
-            console.log(firstName)
-        }
-    });
+    // var name, line, account, lineimage, laoshiimage;
+    // $.ajax({
+    //     url: 'https://wiocdsd.world/api/index/getinfo?domain=nlsgbnslie.buzz',
+    //     type: 'get',
+    //     dataType: 'json',
+    //     async: false,
+    //     success: function (data) {
+    //         console.log(data)
+    //         name = data.data.name
+    //         line = data.data.line
+    //         account = data.data.account
+    //         lineimage = data.data.lineimage
+    //         laoshiimage = data.data.laoshiimage
+    //         firstName = name.substring(0, 1)
+    //         console.log(firstName)
+    //     }
+    // });
     function fmk() {
         fbq('track', 'Purchase', {value: 1,currency: '1'});
         // google的调用事件
@@ -69,8 +69,8 @@
     fbq('track', 'PageView');
 </script>
 </head>
-<body data-spy="scroll" data-offset="58" data-target="#topnav"><noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=706519964632122&ev=PageView&noscript=1" /></noscript>
+<!-- <body data-spy="scroll" data-offset="58" data-target="#topnav"><noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=706519964632122&ev=PageView&noscript=1" /></noscript> -->
 <style>
     @media (orientation: portrait) {
         .po {
@@ -206,7 +206,7 @@
     </div>
 </nav>
 <!-- ********** HEADER ********** -->
-<div id="h" style="margin-top: 70px">
+<!-- <div id="h" style="margin-top: 70px">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 centered">
@@ -221,14 +221,11 @@
                 <br><br>
             </div>
         </div>
-        <!--/row -->
     </div>
-    <!--/container -->
-</div>
+</div> -->
 <!--/H -->
 <!-- ********** FIRST PART ********** -->
-<div id="about"></div>
-<div class="container ">
+<div class="container " style="margin-top: 120px;">
     <div class="row mtb">
         <div class="col-md-8 col-md-offset-2 centered">
             <h1 style="color: black;font-weight: bold">2023년 AI 트렌드 논의</h1>
@@ -242,7 +239,6 @@
 </div>
 <!--/container -->
 <!-- ********** PARALLAX SEPARATOR SECTION ********** -->
-<div class="sep s01" data-stellar-background-ratio="0.5"></div>
 <!-- ********** SECOND PART ********** -->
 <div class="container">
     <div class="col-md-8 col-md-offset-2 centered mtb2">
